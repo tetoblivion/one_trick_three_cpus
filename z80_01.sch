@@ -1,0 +1,352 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CPU:Z80CPU U1
+U 1 1 603EB395
+P 5500 3600
+F 0 "U1" H 5500 5281 50  0000 C CNN
+F 1 "Z80CPU" H 5500 5190 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_Socket_LongPads" H 5500 4000 50  0001 C CNN
+F 3 "www.zilog.com/manage_directlink.php?filepath=docs/z80/um0080" H 5500 4000 50  0001 C CNN
+	1    5500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 603EF60F
+P 3350 2400
+F 0 "SW1" H 3350 2685 50  0000 C CNN
+F 1 "SW_Push" H 3350 2594 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 3350 2600 50  0001 C CNN
+F 3 "~" H 3350 2600 50  0001 C CNN
+	1    3350 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 603EFC86
+P 4300 2150
+F 0 "R1" H 4230 2104 50  0000 R CNN
+F 1 "R" H 4230 2195 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4230 2150 50  0001 C CNN
+F 3 "~" H 4300 2150 50  0001 C CNN
+	1    4300 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 603F0790
+P 6900 3900
+F 0 "R11" H 6830 3854 50  0000 R CNN
+F 1 "R" H 6830 3945 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6830 3900 50  0001 C CNN
+F 3 "~" H 6900 3900 50  0001 C CNN
+	1    6900 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 603F2339
+P 7300 3900
+F 0 "D2" H 7293 4117 50  0000 C CNN
+F 1 "LED" H 7293 4026 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm_Clear" H 7300 3900 50  0001 C CNN
+F 3 "~" H 7300 3900 50  0001 C CNN
+	1    7300 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 603F2C40
+P 6900 3650
+F 0 "R10" H 6830 3604 50  0000 R CNN
+F 1 "R" H 6830 3695 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6830 3650 50  0001 C CNN
+F 3 "~" H 6900 3650 50  0001 C CNN
+	1    6900 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 603F2D00
+P 7300 3650
+F 0 "D1" H 7293 3867 50  0000 C CNN
+F 1 "LED" H 7293 3776 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm_Clear" H 7300 3650 50  0001 C CNN
+F 3 "~" H 7300 3650 50  0001 C CNN
+	1    7300 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 603EBE99
+P 5600 1400
+F 0 "J1" V 5662 1444 50  0000 L CNN
+F 1 "Conn_01x02_Male" V 5753 1444 50  0000 L CNN
+F 2 "" H 5600 1400 50  0001 C CNN
+F 3 "~" H 5600 1400 50  0001 C CNN
+	1    5600 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 2100 5500 1800
+$Comp
+L Device:C C1
+U 1 1 603ED7F3
+P 5650 1800
+F 0 "C1" V 5398 1800 50  0000 C CNN
+F 1 "C" V 5489 1800 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 5688 1650 50  0001 C CNN
+F 3 "~" H 5650 1800 50  0001 C CNN
+	1    5650 1800
+	0    1    1    0   
+$EndComp
+Connection ~ 5500 1800
+Wire Wire Line
+	5500 1800 5500 1600
+Wire Wire Line
+	5800 1800 5800 1600
+Wire Wire Line
+	5800 1600 5600 1600
+Wire Wire Line
+	5500 5100 6650 5100
+Wire Wire Line
+	7700 5100 7700 3900
+Wire Wire Line
+	7700 1800 5800 1800
+Connection ~ 5800 1800
+Wire Wire Line
+	7050 3650 7150 3650
+Connection ~ 7700 3650
+Wire Wire Line
+	7700 3650 7700 1800
+Wire Wire Line
+	7050 3900 7150 3900
+Connection ~ 7700 3900
+Wire Wire Line
+	7700 3900 7700 3650
+Wire Wire Line
+	6350 3650 6350 3800
+Wire Wire Line
+	6350 3800 6200 3800
+Wire Wire Line
+	7450 3900 7700 3900
+Wire Wire Line
+	7450 3650 7700 3650
+Wire Wire Line
+	6750 3650 6350 3650
+Wire Wire Line
+	6200 3900 6750 3900
+$Comp
+L Device:R R9
+U 1 1 603F6CED
+P 6500 4100
+F 0 "R9" H 6430 4054 50  0000 R CNN
+F 1 "R" H 6430 4145 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6430 4100 50  0001 C CNN
+F 3 "~" H 6500 4100 50  0001 C CNN
+	1    6500 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 603F7837
+P 6500 4200
+F 0 "R8" H 6430 4154 50  0000 R CNN
+F 1 "R" H 6430 4245 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6430 4200 50  0001 C CNN
+F 3 "~" H 6500 4200 50  0001 C CNN
+	1    6500 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 603F88EC
+P 6500 4300
+F 0 "R7" H 6430 4254 50  0000 R CNN
+F 1 "R" H 6430 4345 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6430 4300 50  0001 C CNN
+F 3 "~" H 6500 4300 50  0001 C CNN
+	1    6500 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 603F8A68
+P 6500 4400
+F 0 "R6" H 6430 4354 50  0000 R CNN
+F 1 "R" H 6430 4445 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6430 4400 50  0001 C CNN
+F 3 "~" H 6500 4400 50  0001 C CNN
+	1    6500 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 603F91C0
+P 6500 4500
+F 0 "R5" H 6430 4454 50  0000 R CNN
+F 1 "R" H 6430 4545 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6430 4500 50  0001 C CNN
+F 3 "~" H 6500 4500 50  0001 C CNN
+	1    6500 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 603F96E5
+P 6500 4600
+F 0 "R4" H 6430 4554 50  0000 R CNN
+F 1 "R" H 6430 4645 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6430 4600 50  0001 C CNN
+F 3 "~" H 6500 4600 50  0001 C CNN
+	1    6500 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 603F9AC9
+P 6500 4700
+F 0 "R3" H 6430 4654 50  0000 R CNN
+F 1 "R" H 6430 4745 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6430 4700 50  0001 C CNN
+F 3 "~" H 6500 4700 50  0001 C CNN
+	1    6500 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 603F9BFB
+P 6500 4800
+F 0 "R2" H 6430 4754 50  0000 R CNN
+F 1 "R" H 6430 4845 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6430 4800 50  0001 C CNN
+F 3 "~" H 6500 4800 50  0001 C CNN
+	1    6500 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 4800 6200 4800
+Wire Wire Line
+	6350 4700 6200 4700
+Wire Wire Line
+	6350 4600 6200 4600
+Wire Wire Line
+	6350 4500 6200 4500
+Wire Wire Line
+	6350 4400 6200 4400
+Wire Wire Line
+	6200 4300 6350 4300
+Wire Wire Line
+	6350 4200 6200 4200
+Wire Wire Line
+	6200 4100 6350 4100
+Wire Wire Line
+	6650 4100 6650 4200
+Wire Wire Line
+	6650 4300 6650 4400
+Wire Wire Line
+	6650 4200 6650 4300
+Connection ~ 6650 4200
+Connection ~ 6650 4300
+Wire Wire Line
+	6650 4400 6650 4500
+Connection ~ 6650 4400
+Wire Wire Line
+	6650 4600 6650 4500
+Connection ~ 6650 4500
+Wire Wire Line
+	6650 4700 6650 4600
+Connection ~ 6650 4600
+Wire Wire Line
+	6650 4800 6650 4700
+Connection ~ 6650 4700
+Wire Wire Line
+	6650 5100 6650 4800
+Connection ~ 6650 5100
+Wire Wire Line
+	6650 5100 7700 5100
+Connection ~ 6650 4800
+Wire Wire Line
+	5500 1800 4300 1800
+Wire Wire Line
+	4300 1800 4300 2000
+Wire Wire Line
+	5800 1600 5800 950 
+Wire Wire Line
+	5800 950  3000 950 
+Wire Wire Line
+	3000 2400 3150 2400
+Connection ~ 5800 1600
+Wire Wire Line
+	4800 2400 4300 2400
+Wire Wire Line
+	4300 2300 4300 2400
+Connection ~ 4300 2400
+Wire Wire Line
+	4300 2400 3550 2400
+Wire Wire Line
+	3000 950  3000 2400
+$Comp
+L Oscillator:CXO_DIP14 X1
+U 1 1 60403FF8
+P 3800 2850
+F 0 "X1" H 4144 2896 50  0000 L CNN
+F 1 "CXO_DIP14" H 4144 2805 50  0000 L CNN
+F 2 "Oscillator:Oscillator_DIP-14" H 4250 2500 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf" H 3700 2850 50  0001 C CNN
+	1    3800 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 1800 4300 1800
+Connection ~ 4300 1800
+Wire Wire Line
+	4800 3100 4550 3100
+Wire Wire Line
+	4550 3100 4550 3600
+Wire Wire Line
+	4550 3600 4800 3600
+Wire Wire Line
+	4550 3100 4550 3000
+Wire Wire Line
+	4550 3000 4800 3000
+Connection ~ 4550 3100
+Wire Wire Line
+	4800 4700 4550 4700
+Wire Wire Line
+	4550 4700 4550 3600
+Connection ~ 4550 3600
+Wire Wire Line
+	3800 1800 3800 2500
+Wire Wire Line
+	3800 3150 3000 3150
+Wire Wire Line
+	3000 3150 3000 2400
+Connection ~ 3000 2400
+Wire Wire Line
+	4550 3000 4550 2500
+Wire Wire Line
+	4550 2500 3800 2500
+Connection ~ 4550 3000
+Connection ~ 3800 2500
+Wire Wire Line
+	3800 2500 3800 2550
+Wire Wire Line
+	4800 2700 4800 2850
+Wire Wire Line
+	4800 2850 4100 2850
+$EndSCHEMATC
